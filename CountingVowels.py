@@ -4,12 +4,7 @@ CountVowels = lambda string: {**dict.fromkeys(",".join("aeiouy").split(","), 0),
 #Insert multiple strings.
 CountVowelsMultipleStrings = lambda *strings, fn=CountVowels: [fn(i) for i in strings]
 
-print(CountVowels("Hello, world... how are you?"));
-print(CountVowels("The Quick Brown Fox Jumped Over The LAZY ASS DOG!!!"));
-print(CountVowels("HelloO"));
-print(CountVowels("LAAAZYYY"));
-print(CountVowels("Is the sky really falling???"));
-
+#Test.
 print(CountVowelsMultipleStrings("Hello", "EEK", "tHE Quick Brown something or another"))
 
 
